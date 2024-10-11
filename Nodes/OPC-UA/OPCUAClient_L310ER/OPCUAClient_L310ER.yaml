@@ -1,0 +1,362 @@
+Name: OPCUAClient_L310ER
+Id: g=4713ab6b98c48024e6369d50695c1300
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://192.168.1.40:4840"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: MessageSecurityModeEnum
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: SecurityPolicyEnum
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=20;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=20;i=75
+  Direction: Forward
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: 'ns=2;00, 5069-L310ER/A, SPC_Junior_Case_L310ER'
+    Id: 'ns=2;s=__Controller:5069-L310ER/A__'
+    Type: FolderType
+    DisplayName: {"LocaleId":"","Text":"00, 5069-L310ER/A, SPC_Junior_Case_L310ER"}
+    Description: {"LocaleId":"en-US","Text":""}
+    Children:
+    - Name: ns=2;FTEM
+      Id: ns=2;s=FTEM
+      Type: EnergyMetricsVariableType
+      DataType: EnergyMetricsDataType
+      DisplayName: {"LocaleId":"","Text":"FTEM"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: Organizes
+      Value: 
+       {
+        "TypeId": {
+         "IdType": 1,
+         "Id": "EnergyMetricsDataType",
+         "Namespace": 2
+        },
+        "Body": {
+         "KVA": 90.24459838867188,
+         "KVAR": 16.790000915527344,
+         "KW": 137.911865234375,
+         "KWHRS": 116.79000091552734,
+         "PowerFactor": 7.190000057220459,
+         "Water_TOT": 61.619205474853516,
+         "Gas_TOT": 35.43134689331055,
+         "Steam_TOT": 45.218963623046875,
+         "Air_TOT": 44.35708236694336
+        }
+       }
+      Children:
+      - Name: KVA
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.KVA'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"KVA"}
+        Description: {"LocaleId":"en-US","Text":"KVA_"}
+        ReferenceType: HasStructuredComponent
+        Value: 90.02653503417969
+      - Name: KVAR
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.KVAR'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"KVAR"}
+        Description: {"LocaleId":"en-US","Text":"KVAR"}
+        ReferenceType: HasStructuredComponent
+        Value: 46.58000183105469
+      - Name: KW
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.KW'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"KW"}
+        Description: {"LocaleId":"en-US","Text":"Kw"}
+        ReferenceType: HasStructuredComponent
+        Value: 136.63681030273438
+      - Name: KWHRS
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.KWHRS'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"KWHRS"}
+        Description: {"LocaleId":"en-US","Text":"kWh"}
+        ReferenceType: HasStructuredComponent
+        Value: 146.5800018310547
+      - Name: PowerFactor
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.PowerFactor'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"PowerFactor"}
+        Description: {"LocaleId":"en-US","Text":"PF %"}
+        ReferenceType: HasStructuredComponent
+        Value: 36.97999954223633
+      - Name: Water_TOT
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.Water_TOT'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"Water_TOT"}
+        Description: {"LocaleId":"en-US","Text":"Water m3/s"}
+        ReferenceType: HasStructuredComponent
+        Value: 61.41651153564453
+      - Name: Gas_TOT
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.Gas_TOT'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"Gas_TOT"}
+        Description: {"LocaleId":"en-US","Text":"Gas m3/s"}
+        ReferenceType: HasStructuredComponent
+        Value: 32.87297821044922
+      - Name: Steam_TOT
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.Steam_TOT'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"Steam_TOT"}
+        Description: {"LocaleId":"en-US","Text":"Steam MPa"}
+        ReferenceType: HasStructuredComponent
+        Value: 43.20166015625
+      - Name: Air_TOT
+        Id: 'ns=2;s=Root.Objects.00, 5069-L310ER/A, SPC_Junior_Case_L310ER.FTEM.Air_TOT'
+        Type: BaseDataVariableType
+        DataType: Float
+        DisplayName: {"LocaleId":"","Text":"Air_TOT"}
+        Description: {"LocaleId":"en-US","Text":"Air MPa"}
+        ReferenceType: HasStructuredComponent
+        Value: 18.92003059387207
+  - Name: LogixBaseVariableType
+    Id: ns=2;s=LogixBaseVariableType
+    Supertype: BaseDataVariableType
+    DataType: BaseDataType
+    DisplayName: {"LocaleId":"","Text":"LogixBaseVariableType"}
+    Description: {"LocaleId":"en-US","Text":"Base Variable Type for all Logix Variable Types."}
+  - Name: EnergyMetricsVariableType
+    Id: ns=2;s=EnergyMetricsVariableType
+    Supertype: LogixBaseVariableType
+    DataType: EnergyMetricsDataType
+    DisplayName: {"LocaleId":"","Text":"EnergyMetricsVariableType"}
+    Description: {"LocaleId":"en-US","Text":""}
+    Children:
+    - Name: ns=2;KVA
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.KVA
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"KVA"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;KVAR
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.KVAR
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"KVAR"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;KW
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.KW
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"KW"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;KWHRS
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.KWHRS
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"KWHRS"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;PowerFactor
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.PowerFactor
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"PowerFactor"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;Water_TOT
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.Water_TOT
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"Water_TOT"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;Gas_TOT
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.Gas_TOT
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"Gas_TOT"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;Steam_TOT
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.Steam_TOT
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"Steam_TOT"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=2;Air_TOT
+      Id: ns=2;s=Root.Types.VariableTypes.BaseVariableType.BaseDataVariableType.LogixBaseVariableType.EnergyMetricsVariableType.Air_TOT
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"Air_TOT"}
+      Description: {"LocaleId":"en-US","Text":""}
+      ReferenceType: HasStructuredComponent
+  - Class: DataType
+    Name: LogixBaseStructureDataType
+    Id: ns=2;s=LogixBaseStructureDataType
+    Supertype: Structure
+    StructDefinition: 
+     {
+      "Name": "LogixBaseStructureDataType",
+      "DataType": {
+       "IdType": 1,
+       "Id": "LogixBaseStructureDataType",
+       "Namespace": 2
+      },
+      "Fields": []
+     }
+    DisplayName: {"LocaleId":"","Text":"LogixBaseStructureDataType"}
+    Description: {"LocaleId":"en-US","Text":"The base type of all Logix structured DataTypes."}
+  - Class: DataType
+    Name: EnergyMetricsDataType
+    Id: ns=2;s=EnergyMetricsDataType
+    Supertype: LogixBaseStructureDataType
+    StructDefinition: 
+     {
+      "Name": "EnergyMetricsDataType",
+      "DataType": {
+       "IdType": 1,
+       "Id": "EnergyMetricsDataType",
+       "Namespace": 2
+      },
+      "Fields": [{
+        "Name": "KVA",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "KVAR",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "KW",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "KWHRS",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "PowerFactor",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Water_TOT",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Gas_TOT",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Steam_TOT",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Air_TOT",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"EnergyMetricsDataType"}
+    Description: {"LocaleId":"en-US","Text":""}
+    Children:
+    - Name: ns=0;Default Binary
+      Id: ns=2;i=65189
+      Type: DataTypeEncodingType
+      ModellingRule: None
+      DisplayName: {"LocaleId":"","Text":"Default Binary"}
+      ReferenceType: HasEncoding

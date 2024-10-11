@@ -1,0 +1,296 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=716442e65bdf5ddfc41d414c8d94d879
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: WAGES
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Air_TOT
+          Type: StoreColumn
+          DataType: Float
+        - Name: Gas_TOT
+          Type: StoreColumn
+          DataType: Float
+        - Name: Steam_TOT
+          Type: StoreColumn
+          DataType: Float
+        - Name: Water_TOT
+          Type: StoreColumn
+          DataType: Float
+    - Name: Drives_Data
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: 525 Drive1 Freq Out
+          Type: StoreColumn
+          DataType: Int16
+        - Name: 525 Drive2 Freq Out
+          Type: StoreColumn
+          DataType: Int16
+        - Name: 755TS Drive Freq_Out
+          Type: StoreColumn
+          DataType: Int16
+        - Name: E300_Run
+          Type: StoreColumn
+          DataType: Boolean
+    - Name: Data_SIM
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Sine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Cosine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ramp
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Sine_Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Cosine_Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Ramp_Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+    - Name: EventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: SourceNode
+          Type: StoreColumn
+          DataType: String
+        - Name: NewValue
+          Type: StoreColumn
+          DataType: Int32
+        - Name: OldValue
+          Type: StoreColumn
+          DataType: Int32
+    - Name: FTEM
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: PowerFactor
+          Type: StoreColumn
+          DataType: Float
+        - Name: Water
+          Type: StoreColumn
+          DataType: Float
+        - Name: GAS
+          Type: StoreColumn
+          DataType: Float
+        - Name: STEAM
+          Type: StoreColumn
+          DataType: Float
+        - Name: AIR
+          Type: StoreColumn
+          DataType: Float
+    - Name: BOM Metrics
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=16;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=16;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Temperature C
+          Type: StoreColumn
+          DataType: Float
+        - Name: Humidity %
+          Type: StoreColumn
+          DataType: Float
+        - Name: WindSpeed m_s
+          Type: StoreColumn
+          DataType: Float
+        - Name: Pressure hPa
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=34;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=34;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=16;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=59
+    Direction: Forward

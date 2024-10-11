@@ -1,0 +1,109 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: SPC_VariablesSimulator
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iCos
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iRamp
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: bRunSimulation
+    Id: g=e86aff777afd482a3ab891bd115be499
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BOM
+  Type: NetLogic
+  Children:
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Humidity
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: WindSpeed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ErrorMessage
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: bRunBOM
+    Id: g=c2ada9cf63576422f85730d5d8f0549f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Pressure
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Timestamp
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: EmailSenderLogic_Report
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: SendEmail
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailSubject","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailBody","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SenderEmailAddress
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: SenderEmailPassword
+    Type: BaseDataVariableType
+    DataType: Password
+  - Name: SMTPHostname
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: SMTPPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 587
+  - Name: EnableSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Attachment
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=43;%PROJECTDIR%/PDFS/PdfRep1.pdf"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Internal_Arrays/ReportFileName_toShow"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: MaxRetriesOnFailure
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: DelayBeforeRetry
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: EmailSendingStatus
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

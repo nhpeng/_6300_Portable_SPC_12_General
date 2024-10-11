@@ -1,0 +1,44 @@
+Name: Email_Objects
+Type: FolderType
+Children:
+- Name: Email_Model_SMTP_Data_Report
+  Type: BaseObjectType
+  Children:
+  - Name: Email Sender
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "NHP.Vic.Ai@gmail.com"
+  - Name: Email Password
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "pigsbut"
+  - Name: SMTP Hostname
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "smtp.gmail.com"
+  - Name: SMTP Port
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 587
+  - Name: SSL Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Attachment URL
+    Type: BaseDataVariableType
+    DataType: UriString
+    Value: "%PROJECTDIR%\\PDFS\\WAGES.pdf"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Internal_Arrays/ReportFileName_toShow"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: NHP_Email
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "sclark@nhp.com.au"

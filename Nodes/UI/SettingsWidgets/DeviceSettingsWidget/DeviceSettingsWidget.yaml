@@ -1,0 +1,4 @@
+Name: DeviceSettingsWidget
+Type: FolderType
+Children:
+- File: DeviceSettingsWidgetComponents/DeviceSettingsWidgetComponents.yaml

@@ -1,0 +1,9 @@
+Name: Groups
+Type: GroupsCategoryFolder
+Children:
+- Name: Engineers
+  Id: g=d832b0949a33b958025466818f631d69
+  Type: GroupType
+- Name: Operations
+  Id: g=237877807498daaa1aeb746e0a4f1a4a
+  Type: GroupType

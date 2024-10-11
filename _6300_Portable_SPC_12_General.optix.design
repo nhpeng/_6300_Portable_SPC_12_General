@@ -1,0 +1,72 @@
+Project:
+ Name: _6300_Portable_SPC_12_General_Design
+ ProjectNamespaceIndex: 16
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.4
+ CoreVersion: 3.0
+ Dependencies:
+  2:
+   Uri: _6300_Portable_SPC_12_General
+   RelativePath: _6300_Portable_SPC_12_General.optix
+  3:
+   Uri: '4713ab6b98c48024e6369d50695c1300#urn:RockwellAutomation:5069-L310ER%2FA'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  4:
+   Uri: '4713ab6b98c48024e6369d50695c1300#http://rockwellautomation.com/UA/'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  5:
+   Uri: '4713ab6b98c48024e6369d50695c1300#urn:RockwellAutomation:5069-L310ER%2FA:1624858782'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  6:
+   Uri: '4713ab6b98c48024e6369d50695c1300#http://opcfoundation.org/UA/FX/Data/'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  7:
+   Uri: '4713ab6b98c48024e6369d50695c1300#http://opcfoundation.org/UA/DI/'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  8:
+   Uri: '4713ab6b98c48024e6369d50695c1300#http://opcfoundation.org/UA/FX/AC/'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  9:
+   Uri: '4713ab6b98c48024e6369d50695c1300#http://opcfoundation.org/UA/'
+   ServerUri: 4713ab6b98c48024e6369d50695c1300
+  10:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 4.0
+  11:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 1.1
+  12:
+   Uri: 'urn:FTOptix:TagImporter'
+   Module: FTOptix.TagImporter
+   Version: 1.0
+  13:
+   Uri: 'urn:FTOptix:OPCUAImporter'
+   Module: FTOptix.OPCUAImporter
+   Version: 1.0
+  14:
+   Uri: 'urn:FTOptix:RAEtherNetIPTagImporter'
+   Module: FTOptix.RAEtherNetIPTagImporter
+   Version: 1.0
+  15:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 3.0
+ Statistics:
+  TotalNodeCount: 7
+  Objects: 2
+  ObjectTypes: 0
+  Variables: 5
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 0
+  ReferenceTypes: 0
+  Files: 2
+ Nodes:
+ - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/L310ER/TagImporter.yaml
+ - File: 'DesignTimeNodes/OPC-UA/OPCUAClient_L310ER/OPCUATagImporter.yaml'

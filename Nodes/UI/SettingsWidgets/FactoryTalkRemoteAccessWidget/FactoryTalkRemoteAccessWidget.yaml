@@ -1,0 +1,4 @@
+Name: FactoryTalkRemoteAccessWidget
+Type: FolderType
+Children:
+- File: FTRemoteAccessWidgetComponents/FTRemoteAccessWidgetComponents.yaml

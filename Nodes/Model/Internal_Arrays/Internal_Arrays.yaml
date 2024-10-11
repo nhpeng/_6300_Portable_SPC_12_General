@@ -1,0 +1,92 @@
+Name: Internal_Arrays
+Type: FolderType
+Children:
+- Name: Visibility_OPCUA_Arch
+  Id: g=ef8ddc93c1cd6702109bd3bbe6e2d49f
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Visibility_OPCUA_logix
+  Id: g=fecdd3872a7839be0937104adf4044aa
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Visibility_BOM_Metrics
+  Id: g=2510fa6e33e54523f5ecbb639b2fb412
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Visibility_BOM_Alarms
+  Id: g=d175de813be576237677d9701e0b9541
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Visibilty_BOM_Grid
+  Id: g=1b6995c6e24e1004ab43f7484ff05520
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Visibility_Device
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Location
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: ["Position1","Position2","Position3"]
+- Name: LocationValue
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: 2
+  ArrayDimensions: [1,3]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [1,3],
+    "Body": [
+     "0","0","0"
+    ]
+   }
+- Name: ReportFileName_toShow
+  Id: g=cc562d72c74e1d8686245c72a4196f71
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "0"
+- Name: DataLoggerReport_Available
+  Id: g=c12fed81e06c3226881eb214492776f7
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: EventLoggerReport_Available
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: EventLoggerGridFilter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM \"EventLogger1\""
+- Name: DataLoggerGridFilter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM \"DataLogger1\""
+- Name: OPCUA_Serve
+  Type: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 12345
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 245
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2500
+- Name: StartLog_DateTime
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "2024-10-06T03:30:00.0000000"
+- Name: StopLog_DateTime
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "2024-10-14T13:30:00.0000000"
+- Name: SQL_Table_Data_SIM
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Data_SIM"

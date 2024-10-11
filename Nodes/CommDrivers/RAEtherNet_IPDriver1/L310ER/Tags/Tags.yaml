@@ -1,0 +1,99 @@
+Name: Tags
+Type: FolderType
+Children:
+- Class: DataType
+  Name: EnergyMetrics
+  Id: g=00516681da14fe6616e1d4b47ba91d58
+  Supertype: Structure
+  DisplayName: {"LocaleId":"","Text":"EnergyMetrics"}
+- Name: EnergyMetrics
+  Id: g=f4c7c6d3134ab4572f2a3468affb7e03
+  Supertype: TagStructure
+  DataType: EnergyMetrics
+  ValueRank: Any
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: Air_TOT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Air_TOT"
+  - Name: Gas_TOT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Gas_TOT"
+  - Name: KVA
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "KVA"
+  - Name: KVAR
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "KVAR"
+  - Name: KW
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "KW"
+  - Name: KWHRS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "KWHRS"
+  - Name: PowerFactor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PowerFactor"
+  - Name: Steam_TOT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Steam_TOT"
+  - Name: Water_TOT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Water_TOT"
+- File: Controller_Tags/Controller_Tags.yaml

@@ -1,0 +1,4 @@
+Name: NetworkSettingsWidget
+Type: FolderType
+Children:
+- File: NetworkSettingsWidgetComponents/NetworkSettingsWidgetComponents.yaml
